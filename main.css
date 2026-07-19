@@ -1,0 +1,31 @@
+/* yeah ts sets up the style ig */
+/* ts creates a new font family uhh */
+@font-face {
+    font-family: "Comic Sans MS";
+    src: url("assets/fonts/ComicSansMS.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* this is for the background image */
+body {
+   /* background-image: url("assets/img/background.png");
+    background-repeat: repeat;
+    background-size: 600px;*/
+    background-color: rgb(107, 116, 113);    
+    color: white;
+}
+
+html{
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Sans Serif";
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    font-size: larger;
+}
