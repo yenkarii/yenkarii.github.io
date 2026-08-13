@@ -7,25 +7,99 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: "BONDA";
+  src: url(assets/fonts/BONDAfont/VREMF___.woff2);
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@media screen and (min-width: 600px){
+    body{
+        font-size:15px;
+    }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 25px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
 /* this is for the background image */
 body {
-   /* background-image: url("assets/img/background.png");
+    position: relative;
+    box-sizing: border-box;
+    background-image: url("assets/img/backgrounds/bondabg.png");
     background-repeat: repeat;
-    background-size: 600px;*/
-    background-color: rgb(107, 116, 113);    
-    color: white;
+    background-size: 150px;
+    /* background-color: rgb(107, 116, 113);     */
+    color: rgb(255, 255, 255);
+    min-height: 1000px;
+    
+}
+
+.bottom-text{
+  position:absolute;
+  bottom: 5px;
+  right: 15px;
+  margin: 0;
+  font-size:160px;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 100;
 }
 
 html{
-    font-size: 25px;
-    font-family: "Comic Sans MS", "Sans Serif";
+   background-image: linear-gradient(
+    to right, 
+    red, orange, yellow, green, blue, violet, red);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display:inline-block;
+  font-weight: bold;
+  padding:5px;
+
+  animation: shift-colors 10s linear infinite;
+}
+
+html{
+    font-family: "BONDA", "Times New Roman", "Times", "Liberation Serif", serif;
     overflow-x: hidden;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+.infobox{
+    position:absolute;
+    /*box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2.5px);
+    border: 3px solid rgba(255, 255, 255, 0.459);*/
+    padding: 9px;
 }
-a:hover{
-    font-size: larger;
+
+.rainbow-effect{
+  background-image: linear-gradient(
+    to right, 
+    red, orange, yellow, green, blue, violet, red);
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display:inline-block;
+  font-weight: bold;
+
+  animation: shift-colors 4s linear infinite;
+}
+
+@keyframes shift-colors{
+  to{
+    background-position: 200% center;
+  }
 }
