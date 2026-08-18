@@ -27,6 +27,7 @@
   h1{
     font-size: 25px;
   }
+<<<<<<< HEAD
   h2{
     font-size: 25px;
   }
@@ -36,6 +37,11 @@
   ul{
     font-size: 20px;
   }
+=======
+  p{
+    font-size: 20px;
+  }
+>>>>>>> 7b9381a2a0acd9c7a2a97fc417efa5f2174128e5
 }
 /* this is for the background image */
 body {
