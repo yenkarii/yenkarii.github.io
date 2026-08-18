@@ -27,7 +27,13 @@
   h1{
     font-size: 25px;
   }
+  h2{
+    font-size: 25px;
+  }
   p{
+    font-size: 20px;
+  }
+  ul{
     font-size: 20px;
   }
 }
