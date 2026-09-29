@@ -68,10 +68,13 @@ body {
   text-align: center;
   padding: 14px 25px;
   text-decoration: none;
+
+  transition: transform 0.2s ease;
 }
 
 .topbar ul li a:hover {
   text-decoration: underline;
   text-decoration-color: white;
-  transform: scale(1.1);
+
+  transform: scaleX(1.5);
 }
