@@ -1,115 +1,77 @@
-/* yeah ts sets up the style ig */
-/* ts creates a new font family uhh */
 @font-face {
-    font-family: "Comic Sans MS";
-    src: url("assets/fonts/ComicSansMS.woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: "BONDA";
-  src: url(assets/fonts/BONDAfont/VREMF___.woff2);
+  font-family: "Comic Sans MS", sans-serif;
+  src: url(./assets/fonts/ComicSansMS/ComicSansMS.woff2);
   font-weight: normal;
   font-style: normal;
-
 }
 
-@media screen and (min-width: 600px){
-    body{
-        font-size:15px;
-    }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 25px;
-  }
-  h1{
-    font-size: 25px;
-  }
-  h2{
-    font-size: 25px;
-  }
-  p{
-    font-size: 20px;
-  }
-  ul{
-    font-size: 20px;
-  }
-
-  p{
-    font-size: 20px;
-  }
-}
-/* this is for the background image */
-body {
-    position: relative;
-    box-sizing: border-box;
-    background-image: url("assets/img/backgrounds/bondabg.png");
-    background-repeat: repeat;
-    background-size: 150px;
-    /* background-color: rgb(107, 116, 113);     */
-    color: rgb(255, 255, 255);
-    min-height: 1000px;
-    
-}
-
-.bottom-text{
-  position:absolute;
-  bottom: 5px;
-  right: 15px;
-  margin: 0;
-  font-size:160px;
-  letter-spacing: 2px;
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(./assets/fonts/poppins/poppins-regular-webfont.woff2);
+  font-weight: normal;
   font-style: normal;
-  font-weight: 100;
 }
 
-html{
-   background-image: linear-gradient(
-    to right, 
-    red, orange, yellow, green, blue, violet, red);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display:inline-block;
-  font-weight: bold;
-  padding:5px;
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  background-color: black;
+  /* background-image: url(./assets/img/backgrounds/current/yenbg.jpg);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: 10rem 10rem; */
+  /* animation: backgroundMovement 5s linear infinite; */
+  color: white;
 
-  animation: shift-colors 10s linear infinite;
+
 }
 
-html{
-    font-family: "BONDA", "Times New Roman", "Times", "Liberation Serif", serif;
-    overflow-x: hidden;
-}
-
-.infobox{
-    position:absolute;
-    /*box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2.5px);
-    border: 3px solid rgba(255, 255, 255, 0.459);*/
-    padding: 9px;
-}
-
-.rainbow-effect{
-  background-image: linear-gradient(
-    to right, 
-    red, orange, yellow, green, blue, violet, red);
-  background-size: 200% auto;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display:inline-block;
-  font-weight: bold;
-
-  animation: shift-colors 4s linear infinite;
-}
-
-@keyframes shift-colors{
-  to{
-    background-position: 200% center;
+@keyframes backgroundMovement {
+  from {
+    background-position: top center;
   }
+
+  to {
+    background-position: bottom center;
+  }
+
+}
+
+.topbar ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; /* Vertically centers text of different sizes */
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 100px;
+  text-transform: uppercase;
+}
+
+.topbar ul li {
+  float: none; 
+}
+
+.topbar ul li p {
+  font-family: "Poppins";
+  font-style: bold;
+  margin: 0;
+  margin-right: 50px;
+  font-size: 30px;
+  padding: 14px 100px;
+}
+
+.topbar ul li a {
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+.topbar ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  transform: scale(1.1);
 }
