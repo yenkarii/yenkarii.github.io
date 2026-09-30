@@ -81,6 +81,7 @@ body {
 }
 
 .container{
+  background-color: black;
   border: 2px solid white;
   border-radius: 1px;
   width: fit-content;
