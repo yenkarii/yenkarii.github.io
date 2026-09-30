@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Comic Sans MS", sans-serif;
-  src: url(./assets/fonts/ComicSansMS/ComicSansMS.woff2);
+  src: url(./assets/fonts/ComicSansMS/ComicSansMS.woff2) format(woff2);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins", sans-serif;
-  src: url(./assets/fonts/poppins/poppins-regular-webfont.woff2);
+  src: url(./assets/fonts/poppins/poppins-regular-webfont.woff2) format(woff2);
   font-weight: normal;
   font-style: normal;
 }
