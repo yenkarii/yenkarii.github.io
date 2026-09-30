@@ -41,7 +41,8 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  align-items: center; /* Vertically centers text of different sizes */
+  align-items: center;
+  /* Vertically centers text of different sizes */
   list-style-type: none;
   margin: 0;
   padding: 0 0 0 100px;
@@ -49,7 +50,7 @@ body {
 }
 
 .topbar ul li {
-  float: none; 
+  float: none;
 }
 
 .topbar ul li p {
@@ -77,4 +78,22 @@ body {
   text-decoration-color: white;
 
   transform: scaleX(1.5);
+}
+
+.container{
+  border: 2px solid white;
+  border-radius: 1px;
+  width: fit-content;
+  padding: 10px 20px 10px
+}
+
+.container h2 {
+  font-size: 30px;
+  font-style: bold;
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+
+.container p {
+  font-size: 20px;
 }
