@@ -12,6 +12,8 @@
   font-style: normal;
 }
 
+
+
 body {
   font-family: "Comic Sans MS", sans-serif;
   background-color: black;
@@ -98,4 +100,20 @@ body {
 
 .container p {
   font-size: 20px;
+}
+
+.spinningimages{
+  animation: spin 2s ease-in-out infinite;
+  width: 250px;
+  position:absolute;
+}
+
+
+@keyframes spin {
+    from{
+      transform:rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
 }
