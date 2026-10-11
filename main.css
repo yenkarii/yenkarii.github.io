@@ -102,10 +102,15 @@ body {
   font-size: 20px;
 }
 
-.spinningimages{
-  animation: spin 2s ease-in-out infinite;
+.spinningelems{
+  animation: spin 1s ease-in-out infinite;
   width: 250px;
   position:absolute;
+}
+
+.jumpingelems{
+  animation: jump 0.2s ease-in-out infinite;
+  position: absolute;
 }
 
 
@@ -116,4 +121,19 @@ body {
     to{
       transform: rotate(360deg);
     }
+}
+
+@keyframes jump {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-50px)
+  }
+  75%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
