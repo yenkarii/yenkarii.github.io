@@ -14,7 +14,9 @@
   font-style: normal;
 }
 
-
+.uselessyellowtext:hover{
+  color: yellow;
+}
 
 body {
   font-family: "Comic Sans MS", sans-serif;
@@ -80,7 +82,8 @@ body {
 
 .topbar ul li a:hover {
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: yellow;
+  color:yellow;
 
   transform: scaleX(1.5);
 }
